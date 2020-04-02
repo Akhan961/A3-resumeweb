@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="My resume webpage">
+    <meta name="author" content="Abdul Haseeb Khan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <title>Homepage</title>
+</head>
+
+<body>
+    <header>
+        <h1>My Resume Webpage</h1>
+        <nav>
+            <p>Go to:</p>
+            <ul>
+                <li><a href="#ed">Education</a></li>
+                <li><a href="#ve">Volunteer Experience</a></li>
+                <li><a href="#pd">Projects Done</a></li>
+                <li><a href="#av">Achievements</a></li>
+                <li><a href="#cd">Courses Done</a></li>
+                <li><a href="#sh">Skills & Hobbies</a></li>
+                <li><a href="#ct">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section class="container">
+                <h2 class="info">About Me</h2>
+                <div class="content" id="one">
+                    <h3 id="ed">Education</h3>
+                    <ul>
+                        <li>High School Diploma</li>
+                        <li>1 year of Computer Science at University of Toronto</li>
+                        <li>1 year of Computer Information Systems at Mount Royal University</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h3 id="ve">Volunteer Experience</h3>
+                    <ul>
+                        <li>Parking Staff</li>
+                        <li>Preparing Food at Homeless Shelther</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h3 id="pd">Projects Done</h3>
+                    <ul>
+                        <li>Coding and Designing Websites for school projects</li>
+                        <li>Collaborating with the Canadian Military to build their website</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h3 id="av">Achievements</h3>
+                    <p>Nobel Peace Prize</p>
+                </div>
+                <div class="content">
+                    <h3 id="cd">Courses Done</h3>
+                    <ol>
+                        <li>Psychology</li>
+                        <li>Business</li>
+                        <li>Computer Science</li>
+                        <li>Math</li>
+                    </ol>
+                </div>
+                <div class="content">
+                    <h3 id="sh">Skills and Hobbies</h3>
+                    <ul>
+                        <li>Basketball</li>
+                        <li>Coding</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+            </section>
+            <div class="vid">
+                <video id="video" poster="resources/preview.png" controls width="480" height="360">
+                    <source src="resources/lego.mp4" type='video/mp4'>
+                </video>
+            </div>
+            <section>
+                <h2 id="ct">Contact Me</h2>
+                <form method="post" action="mailto:akhan961@mtroyal.ca" name="feedback form">
+                    <input name="form" type="hidden" />
+                    <div>
+                        <fieldset>
+                            <legend>Your Feedback</legend>
+                            <p>
+                                <label>Message
+                                    <br />
+                                    <textarea name="message" rows="4" cols="50"></textarea>
+                                </label>
+                            </p>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Your Contact Information</legend>
+                            <p>
+                                <label>Email*
+                                    <input name="email" type="email" placeholder="someone@email.com"
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+                                </label>
+                            </p>
+                            <p class="text">
+                                <label>Phone
+                                    <input name="phone" type="tel" placeholder="123-456-7890"
+                                        pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" />
+                                </label>
+                            </p>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Your Decision</legend>
+                            <input name="submit" type="submit" value="Submit" />
+                            <input name="reset" type="reset" value="Reset" />
+                        </fieldset>
+                    </div>
+                </form>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Made By: Abdul Haseeb Khan</p>
+    </footer>
+</body>
+
+</html>
