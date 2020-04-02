@@ -1,0 +1,130 @@
+:root{
+    --main-font: 'Lato', sans-serif;
+    --head-font: 'Oswald', sans-serif;
+    --inf-shadow: 0 0 10px 10px gray;
+    --div-border: 1px solid black;
+    --self-shadow: 1px 1px 1px red;
+    --nav-back: thistle;
+    --nav-shadow: 1px 1px 1px cadetblue;
+    --nav-div: 1px solid black;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    margin: 1em;
+}
+
+.info, #ct {
+    grid-column: span 3;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: var(--inf-shadow);
+}
+
+div {
+    text-align: center;
+}
+
+.container>div{
+    border: var(--div-border);
+}
+
+video, input {
+    cursor: pointer;
+}
+
+h1 {
+    font-family: var(--head-font);
+    text-shadow: var(--self-shadow);
+    margin: 1em;
+    font-size: 2em;
+    font-weight: bolder;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+h2 {
+    margin: 1em;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+h3 {
+    margin: 1em;
+    font-size: 1.17em;
+    font-weight: bolder;
+}
+
+a, p, ol, ul, li {
+    margin: 1em;
+}
+
+p, li, h2, h3, footer {
+    font-family: var(--main-font);
+}
+
+body {
+    background: url(resources/white-waves.png) repeat 0 0;
+}
+
+a:hover {
+    background-color: var(--nav-back);
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    margin: 1em;
+    text-shadow: var(--nav-shadow);
+}
+
+footer {
+    text-align: center;
+    text-shadow: var(--self-shadow);
+}
+
+nav>ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav>ul>li {
+    border-left: var(--nav-div);
+}
+
+.vid {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+form {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset{
+    margin: 1em;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, auto);
+    }
+    .content {
+        grid-column: span 3;
+    }
+    nav>ul {
+        display: block;
+    }
+}
